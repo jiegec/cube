@@ -28,7 +28,6 @@
     {X}{X}{X}
 }
 
-
 \section{F2L}
 
 \begin{longtabu} to \textwidth { | l | X | l | }
@@ -353,130 +352,118 @@ R U R' U2 R U R' U2 R U' R' &
   \end{tikzpicture} &
 
   \begin{tikzpicture} [scale=\scale]
-    \DrawRubikLayerFace{R} {X} {R}
-    {X} {X} {X}
-    {O} {X} {O}
+    \DrawRubikLayerFaceAll{X}
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (F) at (5.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (B) at (3.5, 0.5) {
 \tiny\textsf{B}
-    
+
 };
     \node (B) at (5.5, 0.5) {
 \tiny\textsf{B}
-    
+
 };
   \end{tikzpicture} &
   (R U') U' R' U' (R U') (R2 U') U' R (U R' U) R \\ \cline{2-3} &
 
   \begin{tikzpicture} [scale=\scale]
-    \DrawRubikLayerFace{R} {X} {O}
-    {X} {X} {X}
-    {R} {X} {O}
+    \DrawRubikLayerFaceAll{X}
     \draw[<->,thick] (0.5, 0.5) -- (2.5, 2.5);
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (B) at (5.5, 2.5) {
 \tiny\textsf{B}
-    
+
 };
     \node (F) at (3.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (B) at (5.5, 0.5) {
 \tiny\textsf{B}
-    
+
 };
   \end{tikzpicture} &
-  (R U') U' R' U' (R U') (R2 U') U' R (U R' U) R \\ \cline{2-3} &
+  (R' U) R2 D r' U2 r D' (R2 U' R) \\ \cline{2-3} &
 
   \begin{tikzpicture} [scale=\scale]
-    \DrawRubikLayerFace{R} {X} {R}
-    {X} {X} {X}
-    {B} {X} {G}
+    \DrawRubikLayerFaceAll{X}
     \draw[<->,thick] (0.5, 0.5) -- (2.5, 0.5);
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (F) at (5.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (L) at (3.5, 0.5) {
 \tiny\textsf{L}
-    
+
 };
     \node (R) at (5.5, 0.5) {
 \tiny\textsf{R}
-    
+
 };
   \end{tikzpicture} &
   F U' (r' F) R2 F' r U R2 F' \\ \cline{2-3} &
 
   \begin{tikzpicture} [scale=\scale]
-    \DrawRubikLayerFace{G} {X} {B}
-    {X} {X} {X}
-    {R} {X} {R}
+    \DrawRubikLayerFaceAll{X}
     \draw[<->,thick] (0.5, 2.5) -- (2.5, 2.5);
     \node (R) at (3.5, 2.5) {
 \tiny\textsf{R}
-    
+
 };
     \node (L) at (5.5, 2.5) {
 \tiny\textsf{L}
-    
+
 };
     \node (F) at (3.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (F) at (5.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
 
   \end{tikzpicture} &
   (R' U) (R U') U' r' (R' F) (R F') r \\ \cline{2-3} &
 
   \begin{tikzpicture} [scale=\scale]
-    \DrawRubikLayerFace{R} {X} {B}
-    {X} {X} {X}
-    {R} {X} {G}
+    \DrawRubikLayerFaceAll{X}
     \draw[<->,thick] (0.5, 0.5) -- (0.5, 2.5);
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (L) at (5.5, 2.5) {
 \tiny\textsf{L}
-    
+
 };
     \node (F) at (3.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (R) at (5.5, 0.5) {
 \tiny\textsf{R}
-    
+
 };
 
   \end{tikzpicture} &
   y' r (U R') U' (r' F) (R F') \\ \cline{2-3} &
 
   \begin{tikzpicture}[scale=\scale]
-    \DrawRubikLayerFace{G}{X}{R}
-    {X}{X}{X}
-    {B}{X}{R}
+    \DrawRubikLayerFaceAll{X}
     \draw[<->,thick] (2.5, 0.5) -- (2.5, 2.5);
     \node (R) at (3.5, 2.5) {\tiny\textsf{R}};
     \node (F) at (5.5, 2.5) {\tiny\textsf{F}};
@@ -488,9 +475,7 @@ R U R' U2 R U R' U2 R U' R' &
 
 
   \begin{tikzpicture} [scale=\scale]
-    \DrawRubikLayerFace{X} {Y} {X}
-    {Y} {Y} {Y}
-    {Y} {Y} {Y}
+    \DrawRubikLayerFaceAll{X}
     \DrawRubikLayerSideLTy{Y}
     \DrawRubikLayerSideRTy{Y}
   \end{tikzpicture} &
@@ -501,51 +486,47 @@ R U R' U2 R U R' U2 R U' R' &
     {R} {X} {R}
     \node (L) at (3.5, 2.5) {
 \tiny\textsf{L}
-    
+
 };
     \node (R) at (5.5, 2.5) {
 \tiny\textsf{R}
-    
+
 };
     \node (F) at (3.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (F) at (5.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
   \end{tikzpicture} &
   R' U' (R U') (R' U) U R2 (U R' U) (R U') U' R' \\ \cline{2-3} &
 
   \begin{tikzpicture} [scale=\scale]
-    \DrawRubikLayerFace{R} {X} {R}
-    {X} {X} {X}
-    {B} {X} {G}
+    \DrawRubikLayerFaceAll{X}
     \draw[<->,thick] (0.5, 0.5) -- (2.5, 2.5);
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (F) at (5.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (L) at (3.5, 0.5) {
 \tiny\textsf{L}
-    
+
 };
     \node (R) at (5.5, 0.5) {
 \tiny\textsf{R}
-    
+
 };
   \end{tikzpicture} &
   R' U2 R F U' R' U' R U F' \\ \cline{2-3} &
 
   \begin{tikzpicture}[scale=\scale]
-    \DrawRubikLayerFace{R}{X}{O}
-    {X}{X}{X}
-    {B}{X}{R}
+    \DrawRubikLayerFaceAll{X}
     \draw[<->,thick] (0.5, 0.5) -- (2.5, 0.5);
     \node (F) at (3.5, 2.5) {\tiny\textsf{F}};
     \node (B) at (5.5, 2.5) {\tiny\textsf{B}};
@@ -555,9 +536,7 @@ R U R' U2 R U R' U2 R U' R' &
   (R' U) U (R F') (R' F) U2 (F' R) F \\ \cline{2-3} &
 
   \begin{tikzpicture}[scale=\scale]
-    \DrawRubikLayerFace{R}{X}{R}
-    {X}{X}{X}
-    {O}{X}{O}
+    \DrawRubikLayerFaceAll{X}
     \draw[<->,thick] (0.5, 2.5) -- (2.5, 2.5);
     \node (F) at (3.5, 2.5) {\tiny\textsf{F}};
     \node (F) at (5.5, 2.5) {\tiny\textsf{F}};
@@ -568,50 +547,46 @@ R U R' U2 R U R' U2 R U' R' &
   y' R' U' R F (R2 D') R (U R' D) (R2 U') F' \\ \cline{2-3} &
 
   \begin{tikzpicture} [scale=\scale]
-    \DrawRubikLayerFace{R} {X} {G}
-    {X} {X} {X}
-    {B} {X} {R}
+    \DrawRubikLayerFaceAll{X}
     \draw[<->,thick] (0.5, 0.5) -- (0.5, 2.5);
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (R) at (5.5, 2.5) {
 \tiny\textsf{R}
-    
+
 };
     \node (L) at (3.5, 0.5) {
 \tiny\textsf{L}
-    
+
 };
     \node (F) at (5.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
 
   \end{tikzpicture} &
   (R2 D') (R U') U' (R' D) (R U') U' R \\ \cline{2-3} &
 
   \begin{tikzpicture} [scale=\scale]
-    \DrawRubikLayerFace{B} {X} {R}
-    {X} {X} {X}
-    {R} {X} {G}
+    \DrawRubikLayerFaceAll{X}
     \draw[<->,thick] (2.5, 0.5) -- (2.5, 2.5);
     \node (L) at (3.5, 2.5) {
 \tiny\textsf{L}
-    
+
 };
     \node (F) at (5.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (F) at (3.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (R) at (5.5, 0.5) {
 \tiny\textsf{R}
-    
+
 };
 
   \end{tikzpicture} &
@@ -619,9 +594,7 @@ R U R' U2 R U R' U2 R U' R' &
 
 
   \begin{tikzpicture} [scale=\scale]
-    \DrawRubikLayerFace{Y} {Y} {X}
-    {Y} {Y} {Y}
-    {X} {Y} {Y}
+    \DrawRubikLayerFaceAll{X}
     \DrawRubikLayerSideRTy{Y}
     \DrawRubikLayerSideLBx{Y}
   \end{tikzpicture} &
@@ -630,19 +603,19 @@ R U R' U2 R U R' U2 R U' R' &
     \DrawRubikLayerFaceAll{X}
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (R) at (5.5, 2.5) {
 \tiny\textsf{R}
-    
+
 };
     \node (L) at (3.5, 0.5) {
 \tiny\textsf{L}
-    
+
 };
     \node (F) at (5.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
   \end{tikzpicture} &
   R (U R' U) (R U') (R' U) (R U') (R' U) (R U') U' R' \\ \cline{2-3} &
@@ -652,19 +625,19 @@ R U R' U2 R U R' U2 R U' R' &
     \draw[<->,thick] (0.5, 0.5) -- (2.5, 2.5);
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (R) at (5.5, 2.5) {
 \tiny\textsf{R}
-    
+
 };
     \node (L) at (3.5, 0.5) {
 \tiny\textsf{L}
-    
+
 };
     \node (B) at (5.5, 0.5) {
 \tiny\textsf{B}
-    
+
 };
   \end{tikzpicture} &
   (L' U) U (R U') (R' U) U L (R U') R' \\ \cline{2-3} &
@@ -694,19 +667,19 @@ R U R' U2 R U R' U2 R U' R' &
     \draw[<->,thick] (0.5, 0.5) -- (0.5, 2.5);
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (B) at (5.5, 2.5) {
 \tiny\textsf{B}
-    
+
 };
     \node (L) at (3.5, 0.5) {
 \tiny\textsf{L}
-    
+
 };
     \node (R) at (5.5, 0.5) {
 \tiny\textsf{R}
-    
+
 };
   \end{tikzpicture} &
   R' F' (L' F) (R F') r U \\ \cline{2-3} &
@@ -716,19 +689,19 @@ R U R' U2 R U R' U2 R U' R' &
     \draw[<->,thick] (2.5, 0.5) -- (2.5, 2.5);
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (F) at (5.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (L) at (3.5, 0.5) {
 \tiny\textsf{L}
-    
+
 };
     \node (R) at (5.5, 0.5) {
 \tiny\textsf{R}
-    
+
 };
   \end{tikzpicture} &
   y (R' U) (U R') D' (R U') U' (R' D) R2 \\ \hline
@@ -748,19 +721,19 @@ R U R' U2 R U R' U2 R U' R' &
     \DrawRubikLayerFaceAll{X}
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (F) at (5.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (R) at (3.5, 0.5) {
 \tiny\textsf{R}
-    
+
 };
     \node (L) at (5.5, 0.5) {
 \tiny\textsf{L}
-    
+
 };
   \end{tikzpicture} &
   y (R U') U' (R2 U') (R2 U') (R2 U') U' R \\ \cline{2-3} &
@@ -770,19 +743,19 @@ R U R' U2 R U R' U2 R U' R' &
     \draw[<->,thick] (0.5, 0.5) -- (2.5, 2.5);
     \node (R) at (3.5, 2.5) {
 \tiny\textsf{R}
-    
+
 };
     \node (L) at (5.5, 2.5) {
 \tiny\textsf{L}
-    
+
 };
     \node (F) at (3.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (F) at (5.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
   \end{tikzpicture} &
   y (R F') U' (R2 F) U' F' U \\ \cline{2-3} &
@@ -792,19 +765,19 @@ R U R' U2 R U R' U2 R U' R' &
     \draw[<->,thick] (0.5, 0.5) -- (2.5, 0.5);
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (F) at (5.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (B) at (3.5, 0.5) {
 \tiny\textsf{B}
-    
+
 };
     \node (B) at (5.5, 0.5) {
 \tiny\textsf{B}
-    
+
 };
   \end{tikzpicture} &
   y (R U') (r' F) (R' F) r U (r' F) r \\ \cline{2-3} &
@@ -814,19 +787,19 @@ R U R' U2 R U R' U2 R U' R' &
     \draw[<->,thick] (0.5, 2.5) -- (2.5, 2.5);
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (B) at (5.5, 2.5) {
 \tiny\textsf{B}
-    
+
 };
     \node (B) at (3.5, 0.5) {
 \tiny\textsf{B}
-    
+
 };
     \node (F) at (5.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
   \end{tikzpicture} &
   y2 F (R2 U') R2 U R2 U F' y (R U') U' R' \\ \cline{2-3} &
@@ -846,19 +819,19 @@ R U R' U2 R U R' U2 R U' R' &
     \draw[<->,thick] (2.5, 0.5) -- (2.5, 2.5);
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (L) at (5.5, 2.5) {
 \tiny\textsf{L}
-    
+
 };
     \node (R) at (3.5, 0.5) {
 \tiny\textsf{R}
-    
+
 };
     \node (F) at (5.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
   \end{tikzpicture} &
   (R' U) U R (U R' U) (R2 U') (r' F) R' (F' r) \\ \hline
@@ -877,19 +850,19 @@ R U R' U2 R U R' U2 R U' R' &
     \DrawRubikLayerFaceAll{X}
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (B) at (5.5, 2.5) {
 \tiny\textsf{B}
-    
+
 };
     \node (L) at (3.5, 0.5) {
 \tiny\textsf{L}
-    
+
 };
     \node (R) at (5.5, 0.5) {
 \tiny\textsf{R}
-    
+
 };
   \end{tikzpicture} &
   y' R (U R' U) (R U') U' R' \\ \cline{2-3} &
@@ -929,19 +902,19 @@ R U R' U2 R U R' U2 R U' R' &
     \draw[<->,thick] (0.5, 0.5) -- (0.5, 2.5);
     \node (R) at (3.5, 2.5) {
 \tiny\textsf{R}
-    
+
 };
     \node (F) at (5.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (F) at (3.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (L) at (5.5, 0.5) {
 \tiny\textsf{L}
-    
+
 };
   \end{tikzpicture} &
   y2 (F R') U2 (R F') (R' F) U2 (F' R) \\ \cline{2-3} &
@@ -951,19 +924,19 @@ R U R' U2 R U R' U2 R U' R' &
     \draw[<->,thick] (2.5, 0.5) -- (2.5, 2.5);
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (R) at (5.5, 2.5) {
 \tiny\textsf{R}
-    
+
 };
     \node (L) at (3.5, 0.5) {
 \tiny\textsf{L}
-    
+
 };
     \node (B) at (5.5, 0.5) {
 \tiny\textsf{B}
-    
+
 };
   \end{tikzpicture} &
   y (R' U) U R U F (R' U) (R U') F' \\ \hline
@@ -982,19 +955,19 @@ R U R' U2 R U R' U2 R U' R' &
     \DrawRubikLayerFaceAll{X}
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (B) at (5.5, 2.5) {
 \tiny\textsf{B}
-    
+
 };
     \node (R) at (3.5, 0.5) {
 \tiny\textsf{R}
-    
+
 };
     \node (L) at (5.5, 0.5) {
 \tiny\textsf{L}
-    
+
 };
   \end{tikzpicture} &
   (R U') U' R' U' (R U') R'  \\ \cline{2-3} &
@@ -1004,19 +977,19 @@ R U R' U2 R U R' U2 R U' R' &
     \draw[<->,thick] (0.5, 0.5) -- (2.5, 2.5);
     \node (R) at (3.5, 2.5) {
 \tiny\textsf{R}
-    
+
 };
     \node (L) at (5.5, 2.5) {
 \tiny\textsf{L}
-    
+
 };
     \node (F) at (3.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (F) at (5.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
   \end{tikzpicture} &
   y' (R U') U' (r' F) R' (F' r) U' (R U') R'  \\ \cline{2-3} &
@@ -1036,19 +1009,19 @@ R U R' U2 R U R' U2 R U' R' &
     \draw[<->,thick] (0.5, 2.5) -- (2.5, 2.5);
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (L) at (5.5, 2.5) {
 \tiny\textsf{L}
-    
+
 };
     \node (B) at (3.5, 0.5) {
 \tiny\textsf{B}
-    
+
 };
     \node (F) at (5.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
   \end{tikzpicture} &
   y' L R' U' R U L' U2 (R' U) U R \\ \cline{2-3} &
@@ -1089,7 +1062,7 @@ R U R' U2 R U R' U2 R U' R' &
     \node (F) at (3.5, 2.5) {\tiny\textsf{F}};
     \node (B) at (5.5, 2.5) {\tiny\textsf{F}};
     \node (F) at (3.5, 0.5) {\tiny\textsf{B}};
-    \node (B) at (5.5, 0.5) {\tiny\textsf{F}};
+    \node (B) at (5.5, 0.5) {\tiny\textsf{B}};
   \end{tikzpicture} &
   (R U') U' R' U' R (U R') U' (R U') R'  \\ \cline{2-3} &
 
@@ -1108,19 +1081,19 @@ R U R' U2 R U R' U2 R U' R' &
     \draw[<->,thick] (0.5, 0.5) -- (2.5, 0.5);
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (F) at (5.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (R) at (3.5, 0.5) {
 \tiny\textsf{R}
-    
+
 };
     \node (L) at (5.5, 0.5) {
 \tiny\textsf{L}
-    
+
 };
   \end{tikzpicture} &
   y R (U R' U) R U (r' F) R' (F' r) \\ \cline{2-3} &
@@ -1130,19 +1103,19 @@ R U R' U2 R U R' U2 R U' R' &
     \draw[<->,thick] (2.5, 0.5) -- (2.5, 2.5);
     \node (F) at (3.5, 2.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (R) at (5.5, 2.5) {
 \tiny\textsf{R}
-    
+
 };
     \node (F) at (3.5, 0.5) {
 \tiny\textsf{F}
-    
+
 };
     \node (L) at (5.5, 0.5) {
 \tiny\textsf{L}
-    
+
 };
   \end{tikzpicture} &
   y (R' F) U2 (F' R) (F R') U2 (R F') \\ \hline
